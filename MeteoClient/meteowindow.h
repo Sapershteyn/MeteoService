@@ -18,7 +18,9 @@ class MeteoWindow : public QMainWindow
 public:
     explicit MeteoWindow(QWidget *parent = 0);
     ~MeteoWindow();
+    // Set max date interval
     void setInterval(QDate &date1, QDate &date2);
+    // Send date request for interval
     void requestInterval(QDate &date1, QDate &date2);
 
 private:
